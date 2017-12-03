@@ -493,14 +493,14 @@ img {
 .container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(26, 1fr);
-  grid-template-columns: repeat(3, 1fr 2fr 1fr 4fr);
-  grid-template-columns: repeat(4, minmax(20px, auto) minmax(40px, auto) minmax(20px, auto) minmax(80px, auto));
-  grid-template-columns: [start] repeat(3, [col-sm-start] minmax(20px, auto) [col-sm-end col-md-start] minmax(40px, auto) [col-md-end col-sm-start] minmax(20px, auto) [col-sm-end col-lg-start] minmax(80px, auto)) [end];
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(50px, auto) minmax(70px, auto) minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   height: 80vh; }
 .box {
-  font-size: 20px;
-  background-color: orangered; }
+  font-size: 40px;
+  line-height: 2;
+  background-color: royalblue; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif;
   font-size: 14px;
@@ -684,12 +684,12 @@ pre {
 a.btn--disabled {
       pointer-events: none; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-01322376769093878.png);
+  background-image: url(../img/sprite-004339003505355854.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-01322376769093878.png);
+  background-image: url(../img/sprite-004339003505355854.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
